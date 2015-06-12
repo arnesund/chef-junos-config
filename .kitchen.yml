@@ -1,15 +1,17 @@
 ---
 driver:
-  name: vagrant
+  name: openstack
 
 provisioner:
   name: chef_solo
 
 platforms:
-  - name: ubuntu-12.04
-  - name: centos-6.4
+  - name: ubuntu-1404
 
 suites:
   - name: default
     run_list:
+      - recipe[junos-config::setup_host]
     attributes:
+      chef_client:
+        log_level: ":debug"

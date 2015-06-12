@@ -5,3 +5,6 @@ license          'GPLv2'
 description      'Push Juniper Configuration Changes using Chef'
 long_description 'Push Juniper Configuration Changes using Chef'
 version          '0.1.0'
+
+depends "apt"
+depends "python"
