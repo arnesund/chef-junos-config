@@ -1,42 +1,29 @@
-# chef-junos-config-cookbook
+# junos-config cookbook
 
-TODO: Enter the cookbook description here.
+Chef cookbook for pushing any type of Juniper configuration changes. Uses a designated host to push changes by utilizing the [JunOS PyEZ library](https://techwiki.juniper.net/Automation_Scripting/010_Getting_Started_and_Reference/Junos_PyEZ).
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+All Juniper devices supported by the PyEZ library are supported. Any type of configuration change is supported, not just the set of resources exposed by the [netdev cookbook](https://github.com/opscode-cookbooks/netdev).
 
 ## Attributes
 
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['chef-junos-config']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
-
 ## Usage
 
-### chef-junos-config::default
+### junos-config::default
 
-Include `chef-junos-config` in your node's `run_list`:
+Include `junos-config` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[chef-junos-config::default]"
+    "recipe[junos-config::default]"
   ]
 }
 ```
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Open sourced under the GPLv2 license.
+
+Author: Arne Sund (git@arnesund.no)
