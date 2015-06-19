@@ -1,8 +1,6 @@
 #
-# Cookbook Name:: chef-junos-config
+# Cookbook Name:: junos-config
 # Recipe:: default
 #
-# Copyright (C) 2015 YOUR_NAME
-#
-# All rights reserved - Do Not Redistribute
+# Copyright (C) 2015 Arne Sund
 #
