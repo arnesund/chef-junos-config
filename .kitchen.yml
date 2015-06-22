@@ -11,7 +11,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[junos-config::setup_host]
+      - recipe[junos-config::staging_host]
     attributes:
       chef_client:
         log_level: ":debug"
