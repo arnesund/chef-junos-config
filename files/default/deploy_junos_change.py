@@ -88,7 +88,7 @@ def main(args, loglevel):
 if __name__ == '__main__':
     # Initialize argument parser and specify valid arguments
     parser = argparse.ArgumentParser( 
-                description = "Manipulates a hostname before running a command.",
+                description = "Push configuration changes to Juniper devices using NETCONF.",
                 epilog = "As an alternative to the commandline, params can be placed in a file, one per line, and specified on the commandline like '%(prog)s @params.conf'.",
                 fromfile_prefix_chars = '@' )
     parser.add_argument(
